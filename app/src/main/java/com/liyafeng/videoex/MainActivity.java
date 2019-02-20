@@ -12,6 +12,9 @@ public class MainActivity extends AppCompatActivity {
      * 里面有example，可以运行，下载ndk，file->project structure 下载ndk
      *
      * 然后gradle中 需要把 all64Compile 改成compile
+     * 这样才能将arr包下的三个so库打包进去，否则报so找不到的问题
+     * 在module的build目录下 exploded-arr下是所有依赖的arr包
+     * 编译的时候回一起打包
      *
      *
      *

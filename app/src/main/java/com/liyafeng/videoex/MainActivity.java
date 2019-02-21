@@ -48,6 +48,17 @@ public class MainActivity extends AppCompatActivity {
      * 这里下载，然后把 {sdk}/ndk-bundle/toolchains下的mipsel-linux-android文件夹赋值到对应的位置即可
      *
      *
+     * ==========编译ijkplayer=============
+     * 配置环境变量
+     *
+     * -----Failed to create toolchain
+     * ndk14后不支持android-9了，所以我们要么换ndk要么改android-19
+     *
+     * ----You need the NDKr10e or later
+     * 代码中用字符串判断的（10-14），要么下载旧的ndk，要么改代码将14后的数字加入
+     *
+     *
+     *
      * @param savedInstanceState
      */
     @Override
